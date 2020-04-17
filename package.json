@@ -4,7 +4,7 @@
   "description": "Testando códigos javascript",
   "main": "index.js",
   "scripts": {
-    "start": "env-cmd nodemon start.js",
+    "start": "nodemon --exec babel-node app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "John Silver",
@@ -14,10 +14,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-proposal-throw-expressions": "^7.8.3",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/register": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "env-cmd": "^10.1.0",
     "nodemon": "^2.0.2"
   }
